@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2930EAB12AC902F80033835B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2930EAB02AC902F80033835B /* main.c */; };
+		2930EAB82AC9048D0033835B /* macWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930EAB72AC9048D0033835B /* macWindow.m */; };
+		2930EABB2AC9DEC10033835B /* mainTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2930EABA2AC9DEC10033835B /* mainTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2930EAAD2AC902F80033835B /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		2930EAAD2AC902F80033835B /* TextEditor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TextEditor; sourceTree = BUILT_PRODUCTS_DIR; };
 		2930EAB02AC902F80033835B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2930EAB72AC9048D0033835B /* macWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = macWindow.m; sourceTree = "<group>"; };
+		2930EAB92AC9DD320033835B /* mainTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mainTextView.h; sourceTree = "<group>"; };
+		2930EABA2AC9DEC10033835B /* mainTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mainTextView.m; sourceTree = "<group>"; };
+		2930EABC2ACA183E0033835B /* macWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macWindow.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +47,7 @@
 		2930EAA42AC902F80033835B = {
 			isa = PBXGroup;
 			children = (
-				2930EAAF2AC902F80033835B /* test */,
+				2930EAAF2AC902F80033835B /* src */,
 				2930EAAE2AC902F80033835B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +55,29 @@
 		2930EAAE2AC902F80033835B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2930EAAD2AC902F80033835B /* test */,
+				2930EAAD2AC902F80033835B /* TextEditor */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2930EAAF2AC902F80033835B /* test */ = {
+		2930EAAF2AC902F80033835B /* src */ = {
 			isa = PBXGroup;
 			children = (
 				2930EAB02AC902F80033835B /* main.c */,
+				2930EAB72AC9048D0033835B /* macWindow.m */,
+				2930EABC2ACA183E0033835B /* macWindow.h */,
+				2930EABA2AC9DEC10033835B /* mainTextView.m */,
+				2930EAB92AC9DD320033835B /* mainTextView.h */,
 			);
-			path = test;
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2930EAAC2AC902F80033835B /* test */ = {
+		2930EAAC2AC902F80033835B /* TextEditor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2930EAB42AC902F80033835B /* Build configuration list for PBXNativeTarget "test" */;
+			buildConfigurationList = 2930EAB42AC902F80033835B /* Build configuration list for PBXNativeTarget "TextEditor" */;
 			buildPhases = (
 				2930EAA92AC902F80033835B /* Sources */,
 				2930EAAA2AC902F80033835B /* Frameworks */,
@@ -77,9 +87,9 @@
 			);
 			dependencies = (
 			);
-			name = test;
+			name = TextEditor;
 			productName = test;
-			productReference = 2930EAAD2AC902F80033835B /* test */;
+			productReference = 2930EAAD2AC902F80033835B /* TextEditor */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2930EAA82AC902F80033835B /* Build configuration list for PBXProject "test" */;
+			buildConfigurationList = 2930EAA82AC902F80033835B /* Build configuration list for PBXProject "TextEditor" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2930EAAC2AC902F80033835B /* test */,
+				2930EAAC2AC902F80033835B /* TextEditor */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2930EAB12AC902F80033835B /* main.c in Sources */,
+				2930EAB82AC9048D0033835B /* macWindow.m in Sources */,
+				2930EABB2AC9DEC10033835B /* mainTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +266,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2930EAA82AC902F80033835B /* Build configuration list for PBXProject "test" */ = {
+		2930EAA82AC902F80033835B /* Build configuration list for PBXProject "TextEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2930EAB22AC902F80033835B /* Debug */,
@@ -263,7 +275,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2930EAB42AC902F80033835B /* Build configuration list for PBXNativeTarget "test" */ = {
+		2930EAB42AC902F80033835B /* Build configuration list for PBXNativeTarget "TextEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2930EAB52AC902F80033835B /* Debug */,
