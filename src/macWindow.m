@@ -79,6 +79,7 @@ void createWindow(void) {
     NSMenuItem *fontMenuItem = [[NSMenuItem alloc] initWithTitle:@"Font" action:@selector(openFontDialog:) keyEquivalent:@""];
     [fontMenuItem setTarget:yourInstance];
     // add the item as an item to the edit menu container.
+    
     [editMenu addItem:fontMenuItem];
     
     [app run];
